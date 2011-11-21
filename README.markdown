@@ -1,0 +1,1 @@
+This project present a demonstration of MapKit for iOS.  It creates a map and provides two annotation points.

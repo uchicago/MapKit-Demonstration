@@ -7,16 +7,29 @@
 //
 
 #import "AppDelegate.h"
-
 #import "ViewController.h"
+#import "NSArray+Shuffle.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
 @synthesize viewController = _viewController;
+@synthesize locationManager;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    //
+    // Logging Test 
+    //
+    
+    // This will always log
+    NSLog(@"NSLog statement");
+    ALog(@"ALog is the same as NSLog");
+    
+    // This will only log if in "Debug" scheme
+    DLog(@"DLog statement");    
+    
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
@@ -26,8 +39,29 @@
     }
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    
+    //
+    // Test NSSArray+Shuffle Category
+    //
+    NSArray *places = [NSArray arrayWithObjects:@"Universal Studios", @"Disney World", @"Sea World", nil];
+    NSLog(@"Places (before): %@",places);
+    NSLog(@"Places (after): %@",[places shuffle]);
+    
+    //
+    // Create an "accurate" location manager object 
+    //
+    locationManager = [[CLLocationManager alloc] init];
+    [locationManager setDistanceFilter:kCLDistanceFilterNone];
+    [locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
+    [locationManager setHeadingFilter:kCLDistanceFilterNone];
+    locationManager.delegate = self;
+    //[locationManager startUpdatingLocation];
+    [locationManager startMonitoringSignificantLocationChanges];
+    
     return YES;
 }
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
@@ -68,4 +102,33 @@
      */
 }
 
+#pragma mark - Location Delegate
+/*******************************************************************************
+ * @method          locationManager:didUpdateToLocation:fromLocation
+ * @abstract        <# Abstract #>
+ * @description     <# Description #>
+ ******************************************************************************/
+- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
+{ 
+    NSLog(@"%@", newLocation);
+}
+/*******************************************************************************
+ * @method          locationManager:didFailWithError
+ * @abstract        <# Abstract #>
+ * @description     <# Description #>
+ ******************************************************************************/
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
+{
+    NSLog(@"Could not find location: %@", error);
+}
+
+/*******************************************************************************
+ * @method          locationManager:didUpdateWithHeading
+ * @abstract        <# Abstract #>
+ * @description     <# Description #>
+ ******************************************************************************/
+- (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading
+{
+    NSLog(@"%@",newHeading);
+}
 @end

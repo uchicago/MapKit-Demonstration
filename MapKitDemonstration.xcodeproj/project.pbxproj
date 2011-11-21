@@ -16,6 +16,11 @@
 		37EAFBBD1477677700742388 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EAFBBC1477677700742388 /* ViewController.m */; };
 		37EAFBC01477677700742388 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37EAFBBE1477677700742388 /* ViewController_iPhone.xib */; };
 		37EAFBC31477677700742388 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37EAFBC11477677700742388 /* ViewController_iPad.xib */; };
+		37EAFBCA14776A6B00742388 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37EAFBC914776A6B00742388 /* MapKit.framework */; };
+		37EAFBD414777CEE00742388 /* MyLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EAFBD314777CED00742388 /* MyLocation.m */; };
+		37EAFBD61477855C00742388 /* MickeyMouse.png in Resources */ = {isa = PBXBuildFile; fileRef = 37EAFBD51477855C00742388 /* MickeyMouse.png */; };
+		37EAFBDA1479350400742388 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37EAFBD91479350300742388 /* CoreLocation.framework */; };
+		37EAFBDD147955F800742388 /* NSArray+Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EAFBDC147955F800742388 /* NSArray+Shuffle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +28,23 @@
 		37EAFBA91477677700742388 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		37EAFBAB1477677700742388 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		37EAFBAD1477677700742388 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		37EAFBB11477677700742388 /* MapKitDemonstration-Info.plist */ = {isa = PBXFileReference; path = "MapKitDemonstration-Info.plist"; sourceTree = "<group>"; };
+		37EAFBB11477677700742388 /* MapKitDemonstration-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MapKitDemonstration-Info.plist"; sourceTree = "<group>"; };
 		37EAFBB31477677700742388 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		37EAFBB51477677700742388 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		37EAFBB71477677700742388 /* MapKitDemonstration-Prefix.pch */ = {isa = PBXFileReference; path = "MapKitDemonstration-Prefix.pch"; sourceTree = "<group>"; };
-		37EAFBB81477677700742388 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		37EAFBB71477677700742388 /* MapKitDemonstration-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MapKitDemonstration-Prefix.pch"; sourceTree = "<group>"; };
+		37EAFBB81477677700742388 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		37EAFBB91477677700742388 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		37EAFBBB1477677700742388 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		37EAFBBB1477677700742388 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		37EAFBBC1477677700742388 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		37EAFBBF1477677700742388 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		37EAFBC21477677700742388 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		37EAFBC914776A6B00742388 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		37EAFBD214777CED00742388 /* MyLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLocation.h; sourceTree = "<group>"; };
+		37EAFBD314777CED00742388 /* MyLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLocation.m; sourceTree = "<group>"; };
+		37EAFBD51477855C00742388 /* MickeyMouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MickeyMouse.png; sourceTree = "<group>"; };
+		37EAFBD91479350300742388 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		37EAFBDB147955F800742388 /* NSArray+Shuffle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Shuffle.h"; sourceTree = "<group>"; };
+		37EAFBDC147955F800742388 /* NSArray+Shuffle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Shuffle.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37EAFBDA1479350400742388 /* CoreLocation.framework in Frameworks */,
+				37EAFBCA14776A6B00742388 /* MapKit.framework in Frameworks */,
 				37EAFBAA1477677700742388 /* UIKit.framework in Frameworks */,
 				37EAFBAC1477677700742388 /* Foundation.framework in Frameworks */,
 				37EAFBAE1477677700742388 /* CoreGraphics.framework in Frameworks */,
@@ -49,6 +63,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		377F4653147ACDBA00F66A60 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				37EAFBDB147955F800742388 /* NSArray+Shuffle.h */,
+				37EAFBDC147955F800742388 /* NSArray+Shuffle.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		377F4654147ACDEF00F66A60 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				37EAFBBB1477677700742388 /* ViewController.h */,
+				37EAFBBC1477677700742388 /* ViewController.m */,
+				37EAFBBE1477677700742388 /* ViewController_iPhone.xib */,
+				37EAFBC11477677700742388 /* ViewController_iPad.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		377F4655147ACE0800F66A60 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				37EAFBD214777CED00742388 /* MyLocation.h */,
+				37EAFBD314777CED00742388 /* MyLocation.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		37EAFB9A1477677700742388 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +112,8 @@
 		37EAFBA81477677700742388 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				37EAFBD91479350300742388 /* CoreLocation.framework */,
+				37EAFBC914776A6B00742388 /* MapKit.framework */,
 				37EAFBA91477677700742388 /* UIKit.framework */,
 				37EAFBAB1477677700742388 /* Foundation.framework */,
 				37EAFBAD1477677700742388 /* CoreGraphics.framework */,
@@ -81,10 +126,9 @@
 			children = (
 				37EAFBB81477677700742388 /* AppDelegate.h */,
 				37EAFBB91477677700742388 /* AppDelegate.m */,
-				37EAFBBB1477677700742388 /* ViewController.h */,
-				37EAFBBC1477677700742388 /* ViewController.m */,
-				37EAFBBE1477677700742388 /* ViewController_iPhone.xib */,
-				37EAFBC11477677700742388 /* ViewController_iPad.xib */,
+				377F4655147ACE0800F66A60 /* Models */,
+				377F4653147ACDBA00F66A60 /* Categories */,
+				377F4654147ACDEF00F66A60 /* Controllers */,
 				37EAFBB01477677700742388 /* Supporting Files */,
 			);
 			path = MapKitDemonstration;
@@ -93,6 +137,7 @@
 		37EAFBB01477677700742388 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				37EAFBD51477855C00742388 /* MickeyMouse.png */,
 				37EAFBB11477677700742388 /* MapKitDemonstration-Info.plist */,
 				37EAFBB21477677700742388 /* InfoPlist.strings */,
 				37EAFBB51477677700742388 /* main.m */,
@@ -154,6 +199,7 @@
 				37EAFBB41477677700742388 /* InfoPlist.strings in Resources */,
 				37EAFBC01477677700742388 /* ViewController_iPhone.xib in Resources */,
 				37EAFBC31477677700742388 /* ViewController_iPad.xib in Resources */,
+				37EAFBD61477855C00742388 /* MickeyMouse.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +213,8 @@
 				37EAFBB61477677700742388 /* main.m in Sources */,
 				37EAFBBA1477677700742388 /* AppDelegate.m in Sources */,
 				37EAFBBD1477677700742388 /* ViewController.m in Sources */,
+				37EAFBD414777CEE00742388 /* MyLocation.m in Sources */,
+				37EAFBDD147955F800742388 /* NSArray+Shuffle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +269,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DDEBUG";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -288,6 +337,7 @@
 				37EAFBC81477677700742388 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
